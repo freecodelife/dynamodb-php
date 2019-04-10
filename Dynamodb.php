@@ -30,7 +30,7 @@ class Dynamodb{
 	public static function getInstance($config){
 		try{
 			if(!self::$instance) {
-				self::$instance = new self($dataSourceIndex);
+				self::$instance = new self($config);
 			}
 		}catch(Exception $e){
 			throw new exception($e -> getMessage());
