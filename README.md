@@ -2,3 +2,4 @@
 该文件以来aws的sdk，PHP的aws sdk git地址如下：
 https://github.com/aws/aws-sdk-php
 使用该类要先引入此sdk
+
