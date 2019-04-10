@@ -1,6 +1,7 @@
 <?php
 /**
  * dynamodb 操作类，对aws sdk的二次封装
+ * 使用该类需要先引入aws的sdk可从 https://github.com/aws/aws-sdk-php 此处下载
  * 注意：dynamodb 对数据类型要求较严格，如果表字段是Number形，传String进去会查询不出
  * config示例
  $config = array(
@@ -15,7 +16,9 @@
 	
 );
  */
-require 'aws/aws-autoloader.php';
+
+
+require 'aws/aws-autoloader.php'; 
 use Aws\DynamoDb\Exception\DynamoDbException;
 use Aws\DynamoDb\Marshaler;
 
